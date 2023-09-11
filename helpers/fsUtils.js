@@ -31,4 +31,33 @@ const readAndAppend = (content, file) => {
   });
 };
 
-module.exports = { readFromFile, writeToFile, readAndAppend };
+const deleteNote = (id, filePath, callback) => {
+  fs.readFile(filePath, "utf8", (err, data) => {
+    if (err) {
+      return callback(err);
+    }
+
+    let notes = JSON.parse(data);
+
+   
+    const index = notes.findIndex((note) => note.id === id);
+
+    if (index !== -1) {
+    
+      notes.splice(index, 1);
+
+      
+      fs.writeFile(filePath, JSON.stringify(notes), (err) => {
+        if (err) {
+          return callback(err);
+        }
+
+        callback(null);
+      });
+    } else {
+      callback(null);
+    }
+  });
+};
+
+module.exports = { readFromFile, writeToFile, readAndAppend, deleteNote};
