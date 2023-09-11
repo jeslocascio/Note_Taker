@@ -19,7 +19,7 @@
   ```npm start```
   
   ## Usage
-  To use this project, go to the following Heroku URL: 
+  To use this project, go to the following Heroku URL: https://desolate-shelf-00322-f69b50c2a7eb.herokuapp.com/
 
  When you open the site, you should see the following homepage:
 
