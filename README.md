@@ -37,6 +37,9 @@ From there, you can type in a title and the information for any note you would l
 
 ![Note Taker Site with original Note deleted](./public/assets/images/Note_Was_Deleted.png)
 
+
+The "+" button on the top right on the screen simply clears out any information you have written.
+
  ## License
  ![MIT License](https://img.shields.io/badge/License-MIT-yellow.svg)
   This project is licensed under the terms of the **[MIT License](https://opensource.org/licenses/MIT)**
